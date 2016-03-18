@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TongHana</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Tab 1</string>
+    <string name="title_section2">Tab 2</string>
+    <string name="title_section3">Tab 3</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="example">HELLLLLLO</string>
+
+
+    <string name="hint_id">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+
+
+
+    <string name="home_current_point">적립금 현황</string>
+    <string name="home_current_point_wait">Just a sec...</string>
+    <string name="home_bottom_comment">Tong Hana Project ...</string>
+    <string name="home_test_signup_msg1">더 많은 포인트를 적립하고 싶으세요?</string>
+    <string name="home_test_signup_msg2">지금 바로 회원가입하세요!</string>
+
+
+
+</resources>

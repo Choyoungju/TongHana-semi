@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f12d68</color><!--#f12d68 && FF4081-->
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color> <!-- Tab 밑에 강조색 지정.-->
+
+
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="white">#ffffff</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+
+
+
+
+    <color name="green">#59c3b5</color>
+    <color name="gggreen">#07716f</color>
+    <color name="red">#f50f69</color>
+    <color name="brightgray">#FFD9D9D9</color>
+
+
+    <color name="white_hint">#90ffffff</color>
+    <color name="transparent">@android:color/transparent</color>
+
+
+    <color name="splash_bg">#FFF</color>
+    <array name="splash_circle_colors">
+
+        <item>@color/green</item>
+        <item>@color/gggreen</item>
+        <item>@color/red</item>
+        <item>@color/green</item>
+        <item>@color/gggreen</item>
+        <item>@color/red</item>
+
+    </array>
+
+
+
+</resources>

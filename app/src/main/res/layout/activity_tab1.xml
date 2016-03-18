@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingTop="8.0dip"
+    android:paddingBottom="8.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gggreen"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:text="@string/home_current_point"
+        style="@style/HeadlineText" />
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <RelativeLayout
+            android:layout_width="@dimen/home_circle_size"
+            android:layout_height="@dimen/home_circle_size"
+            android:layout_centerInParent="true">
+
+            <FrameLayout
+                android:id="@+id/home_point_circle_layout"
+                android:background="@drawable/btn_main_circle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/home_circle_bg_margin" />
+
+            <ImageView
+                android:id="@+id/home_point_circle"
+                android:layout_width="@dimen/home_circle_size"
+                android:layout_height="@dimen/home_circle_size"
+                android:src="@drawable/yellow_circle_loader" />
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:id="@+id/home_point_layout"
+                android:visibility="invisible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:textSize="@dimen/home_current_point_text_size"
+                    android:textColor="@color/white"
+                    android:id="@+id/home_current_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/home_current_point_currency_text_size"
+                    android:textColor="@color/white"
+                    android:id="@+id/home_current_point_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:textSize="@dimen/home_total_point_text_size"
+                android:textColor="@color/white_hint"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/home_point_wait"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/home_current_point_wait" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/home_invite_text_size"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:id="@+id/invite_reward_desc"
+            android:paddingTop="8.0dip"
+            android:paddingBottom="8.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44.0dip"
+            android:layout_marginRight="44.0dip"
+            android:layout_centerInParent="true"
+            android:text="@string/home_bottom_comment"/>
+
+        <ImageView
+            android:id="@+id/help_icon_invite"
+            style="@style/HelpIconWhite" />
+
+    </RelativeLayout>
+    <!--
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_display_margin"
+            android:layout_marginRight="@dimen/home_display_margin">
+
+            <ImageView android:id="@id/invite_app_kakao" android:src="@drawable/btn_sns_kakao_selector" style="@style/IntiveSNS" />
+            <ImageView android:id="@id/invite_app_line" android:src="@drawable/btn_sns_line_selector" style="@style/IntiveSNS" />
+            <ImageView android:id="@id/invite_app_facebook" android:src="@drawable/btn_sns_facebook_selector" style="@style/IntiveSNS" />
+            <ImageView android:id="@id/invite_app_fb_messenger" android:src="@drawable/btn_sns_fbmessenger_selector" style="@style/IntiveSNS" />
+            <ImageView android:id="@id/invite_app_twitter" android:src="@drawable/btn_sns_twitter_selector" style="@style/IntiveSNS" />
+            <ImageView android:id="@id/invite_app_kakao_story" android:src="@drawable/btn_sns_kakaostory_selector" style="@style/IntiveSNS" />
+            <ImageView android:id="@id/invite_app_email" android:src="@drawable/btn_sns_email_selector" style="@style/IntiveSNS" />
+            <ImageView android:id="@id/invite_app_other" android:src="@drawable/btn_sns_etc_selector" style="@style/IntiveSNS" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/home_banner"
+        android:background="@drawable/btn_transparent"
+        android:padding="12.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/home_display_margin"
+        android:layout_marginRight="@dimen/home_display_margin">
+
+        <ImageView
+            android:id="@+id/home_banner_icon"
+            android:layout_width="43.0dip"
+            android:layout_height="43.0dip"
+            android:src="@drawable/ic_banner_into" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.0dip"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:textSize="@dimen/home_test_banner_text_big"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/home_banner_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_test_signup_msg1" />
+
+            <TextView
+                android:textSize="@dimen/home_test_banner_text_small"
+                android:textColor="@color/white"
+                android:id="@+id/home_banner_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_test_signup_msg2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="@color/transparent"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_display_margin" />
+-->
+</LinearLayout>
